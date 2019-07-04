@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        tools:context=".MainActivity">
+
+    <!--「時」見出し表示-->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="時："
+            android:id="@+id/hour"/>
+
+    <!--「時」入力-->
+    <EditText
+            android:id="@+id/editHour"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/hour"
+    />
+
+    <!--「分」見出し表示-->
+    <TextView
+            android:id="@+id/minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/editHour"
+            android:text="分："
+    />
+
+    <!--「分」入力-->
+    <EditText
+            android:id="@+id/editMinute"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/minute"
+    />
+
+    <!--TimePickerDialog起動ボタン表示-->
+    <Button
+            android:id="@+id/buttonTimePickerDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/editMinute"
+            android:text="TimePickerDialog"
+    />
+
+    <!--「あいさつ」見出し表示-->
+    <TextView
+            android:id="@+id/greetView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editHour"
+            android:text="あいさつ結果："
+    />
+
+    <!--「あいさつ」結果表示-->
+    <TextView
+            android:id="@+id/greetResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/greetView"
+            android:text=""
+    />
+
+</RelativeLayout>
